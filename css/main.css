@@ -6,6 +6,13 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "Gotham-Bold";
+	src: url("../fonts/Gotham-Bold.otf");
+	font-weight: bold;
+	font-style: normal;
+}
+
 [class^="icon-"],
 [class*=" icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */
@@ -84,16 +91,29 @@
 	opacity: .9;
 }
 
+.banner-outback {
+	background-image: url("../images/outback.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 456px;
+	/*background-size: auto 100%;*/
+
+}
+
 .btn {
 	-webkit-transition: background .3s linear;
+	font-family: Gotham-Bold, "Times New Roman";
 	transition: background .3s linear;
 	display: block;
-	width: 197px;
+	width: 125px;
 	text-transform: uppercase;
 	color: #fff;
 	text-decoration: none;
-	background: #000;
+	/*background: #000;*/
 	margin: 0 auto;
+	font-size: 0.9rem;
 }
 
 .btn:hover {
@@ -507,6 +527,13 @@
 	color: #fff;
 }
 
+.navbar {
+	/*James Edit to make navbar 80% of screen*/
+	max-width:80%;
+    margin:auto;
+	vertical-align: top;
+}
+
 @media (min-width: 768px) {
 	body {
 		font-size: 1.25rem;
@@ -700,4 +727,4 @@
 		padding: 100px 0 120px 0;
 	}
 }
-
+
