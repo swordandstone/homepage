@@ -20,6 +20,13 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "Gotham-Light";
+	src: url("../fonts/Gotham-Light.otf");
+	font-weight: bold;
+	font-style: normal;
+}
+
 
 [class^="icon-"],
 [class*=" icon-"] {
@@ -133,6 +140,7 @@
 
 .banner-text h1 {
 	font-size: 1.562rem;
+	font-family: Gotham-Light;
 	/*margin: auto;*/
 }
 
@@ -569,7 +577,7 @@
 	width: 80%;
 	align-self: flex-start;
 	border-bottom: 1px solid #b6afad;
-	align-items: flex-start;
+	flex-direction: row;
 }
 
 @media (min-width: 768px) {
@@ -689,6 +697,11 @@
 	}
 
 	.hero-wrap-text h1 {
+		margin-bottom: 2.5rem;
+		font-size: 2.812rem;
+	}
+
+	.banner-text h1 {
 		margin-bottom: 2.5rem;
 		font-size: 2.812rem;
 	}
