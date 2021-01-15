@@ -140,24 +140,27 @@
 
 .banner-text h1 {
 	font-size: 1.562rem;
+	margin-bottom: 1.5rem;
 	font-family: Gotham-Light;
 	/*margin: auto;*/
 }
 
+.banner-text h3 {
+	font-size: 0.9rem;
+	font-family: Gotham-Bold;
+}
+
 .btn {
 	-webkit-transition: background .3s linear;
-	font-family: Gotham-Bold, "Times New Roman";
+	font-family: Gotham-Bold;
 	transition: background .3s linear;
 	display: block;
-	/*width: 145px;*/
+	width: 120px;
 	text-transform: uppercase;
 	color: #fff;
 	text-decoration: none;
-	/*background: #000;*/
 	margin: 0 auto;
-	/*font-size: 0.9rem;*/
-	width: 90px;
-	font-size: 0.5rem;
+	font-size: 0.7rem;
 }
 
 .btn:hover {
@@ -577,6 +580,16 @@
 	width: 80%;
 	align-self: flex-start;
 	border-bottom: 1px solid #b6afad;
+	flex-direction: column;
+}
+
+.navbar-brand {
+	align-self: center;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar-nav {
 	flex-direction: row;
 }
 
@@ -603,9 +616,9 @@
 	}
 
 	.btn {
-		width: 90px;
-		font-size: 0.5rem;
-	}
+	width: 125px;
+	font-size: 0.75rem;
+}
 
 	.hero .hero-content {
 		padding: 75px 0;
@@ -621,6 +634,10 @@
 
 	.banner-text h1 {
 		font-size: 2.187rem;
+	}
+
+	.banner-text h3 {
+		font-size: 1.2rem;
 	}
 
 	.hero-wrap-text span {
@@ -679,10 +696,19 @@
 	}
 
 	.btn {
-		width: 145px;
-		font-size: 0.9rem;
+		width: 125px;
+		font-size: 0.8rem;
 	}
 
+	.navbar {
+		flex-direction: row;
+	}
+
+	.navbar-brand {
+		align-self: flex-start;
+		margin-left: unset;
+		margin-right: unset;
+	}
 
 	.hero {
 		height: 100vh;
@@ -704,6 +730,10 @@
 	.banner-text h1 {
 		margin-bottom: 2.5rem;
 		font-size: 2.812rem;
+	}
+
+	.banner-text h3 {
+		font-size: 1.5rem;
 	}
 
 	.hero-wrap-text span {
