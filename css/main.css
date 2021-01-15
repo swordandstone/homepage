@@ -120,7 +120,7 @@ body, html {
 	font-family: Gotham-Bold, "Times New Roman";
 	transition: background .3s linear;
 	display: block;
-	width: 125px;
+	width: 145px;
 	text-transform: uppercase;
 	color: #fff;
 	text-decoration: none;
@@ -130,7 +130,7 @@ body, html {
 }
 
 .btn:hover {
-	background: #3a3838;
+	background: rgba(0, 0, 0, 0.3);
 	color: #fff;
 }
 
@@ -545,6 +545,7 @@ body, html {
 	max-width:80%;
     margin:auto;
 	vertical-align: top;
+	border-bottom: 1px solid #b6afad;
 }
 
 @media (min-width: 768px) {
