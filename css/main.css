@@ -163,9 +163,28 @@
 	font-size: 0.7rem;
 }
 
-.btn:hover {
+.btn:hover, :focus, :checked {
 	background: rgba(0, 0, 0, 0.3);
 	color: #fff;
+}
+
+.btn:checked {
+	background: rgba(0, 0, 0, 0.3);
+	color: #fff;
+}
+
+.active {
+	background: rgba(0, 0, 0, 0.3);
+	color: #fff;
+}
+
+.dropdown-menu {
+	top: 100%;
+    left: 50%;
+	right: auto;
+	transform: translateX(-50%);
+	color: #b6afad;
+	background:rgba(0, 0, 0, 0.3);
 }
 
 .primary-header {
@@ -591,6 +610,10 @@
 
 .navbar-nav {
 	flex-direction: row;
+}
+
+.nav-item {
+	/*position: relative;*/
 }
 
 @media (min-width: 768px) {
