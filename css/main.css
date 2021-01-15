@@ -163,6 +163,10 @@
 	font-size: 0.7rem;
 }
 
+.btn-sub {
+	font-family: Gotham-Light;
+}
+
 .btn:hover, :focus, :checked {
 	background: rgba(0, 0, 0, 0.3);
 	color: #fff;
