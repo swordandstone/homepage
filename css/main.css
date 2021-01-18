@@ -329,12 +329,23 @@
     width: 80%;
 }
 
+.contact-box {
+    padding: 10px 10px 10px 10px;
+    width: 80%;
+}
+
 .text-column {
     padding: 0 0 10px 0
 }
 
 .text-column h1 {
     font-size: 1.3rem;
+    font-family: Gotham-Bold;
+}
+
+.text-column h2 {
+    font-size: 1.3rem;
+    padding: 15px 0 15px 0;
     font-family: Gotham-Bold;
     text-align: center;
 }
@@ -825,6 +836,10 @@
         font-size: 1.2rem;
     }
 
+    .text-column h2 {
+        font-size: 1.2rem;
+    }
+
     .text-column h3 {
         text-align: left;
         font-size: 1.1rem;
@@ -945,6 +960,10 @@
     }
 
     .text-column h1 {
+        font-size: 1.3rem;
+    }
+
+    .text-column h2 {
         font-size: 1.3rem;
     }
 
