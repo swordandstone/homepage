@@ -873,10 +873,10 @@
 	.logo a {
 		width: 650px;
 	}
-
-	.content-block {
-		padding: 135px 0 100px 0;
-	}
+	
+	/*.content-block {*/
+	/*	padding: 100px 0 100px 0;*/
+	/*}*/
 
 	.partners .partners-item {
 		width: 45%;
