@@ -283,6 +283,10 @@
 	padding-bottom: 15px;
 }
 
+.unordered-list {
+	font-size: small;
+}
+
 .text-column {
 	padding: 0 0 10px 0
 }
@@ -299,7 +303,7 @@
 	text-align: center;
 }
 
-.text-column p {
+.text-column p, .unordered-list p {
 	font-size: 1rem;
 	font-family: Gotham-Book;
 	text-align: center;
@@ -775,7 +779,7 @@
 		font-size: 1.1rem;
 	}
 
-	.text-column p {
+	.text-column p, .unordered-list p {
 		text-align: left;
 		font-size: 1.1rem;
 	}
@@ -889,7 +893,7 @@
 		font-size: 1.1rem;
 	}
 
-	.text-column p {
+	.text-column p, .unordered-list p {
 		font-size: 1.1rem;
 	}
 
