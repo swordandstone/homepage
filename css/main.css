@@ -593,15 +593,29 @@
 	position: absolute;
 }
 
-.footer {
+.footer-icon-container {
+	align-self: flex-end;
+}
+
+.footer-icon {
+	height: 24px;
+	width: 24px;
+}
+
+.footer-background {
 	background: #172227;
-	text-align: center;
+	text-align: left;
 	font-size: .687rem;
 	padding: 20px 0;
-	color: #fff;
     margin-left: auto;
 	margin-right: auto;
+}
+
+.footer {
+	margin-left: auto;
+	margin-right: auto;
 	width: 80%;
+	color: #fff;
 	align-self: flex-start;
 	flex-direction: row;
 }
