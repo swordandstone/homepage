@@ -129,7 +129,6 @@
 	display: inline-flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	border-style: solid;
 	justify-content: space-between;
 }
 
