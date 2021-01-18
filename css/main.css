@@ -185,13 +185,8 @@
 	top: 100%;
 	width: 120px;
 	min-width: unset;
-    /*left: 50%;*/
-	/*right: auto;*/
-	/*transform: translateX(-50%);*/
 	color: #b6afad;
 	background:rgba(0, 0, 0, 0.3);
-	/*margin-left: auto;*/
-	/*margin-right: auto;*/
 }
 
 .primary-header {
@@ -270,6 +265,47 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
+}
+
+.our-team-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.our-team-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.our-team-image-column {
+	text-align: center;
+}
+
+.our-team-image-column img {
+	width: 30%;
+	padding-bottom: 15px;
+}
+
+.our-team-text-column {
+	padding: 0 0 10px 0
+}
+
+.our-team-text-column h1 {
+	font-size: 1.3rem;
+	font-family: Gotham-Bold;
+	text-align: center;
+}
+
+.our-team-text-column h3 {
+	font-size: 1rem;
+	font-family: Gotham-Bold;
+	text-align: center;
+}
+
+.our-team-text-column p {
+	font-size: 1rem;
+	font-family: Gotham-Book;
+	text-align: center;
 }
 
 .heading-wrap {
@@ -708,6 +744,40 @@
 
 	.content-block {
 		padding: 50px 0 50px 0;
+		width: 90%;
+	}
+
+	.our-team-content {
+		flex-direction: row;
+	}
+
+	.our-team-image-column img {
+		width: unset;
+		padding-bottom: unset;
+	}
+
+	.our-team-image-column {
+		width: 15%;
+	}
+
+	.our-team-text-column {
+		width: 85%;
+		padding: 0 0 10px 40px
+	}
+
+	.our-team-text-column h1 {
+		text-align: left;
+		font-size: 1.2rem;
+	}
+
+	.our-team-text-column h3 {
+		text-align: left;
+		font-size: 1.1rem;
+	}
+
+	.our-team-text-column p {
+		text-align: left;
+		font-size: 1.1rem;
 	}
 
 	.investment .investment-wrap .investment-item {
@@ -808,6 +878,19 @@
 
 	.content-block {
 		padding: 90px 0 90px 0;
+		width: 80%;
+	}
+
+	.our-team-text-column h1 {
+		font-size: 1.3rem;
+	}
+
+	.our-team-text-column h3 {
+		font-size: 1.1rem;
+	}
+
+	.our-team-text-column p {
+		font-size: 1.1rem;
 	}
 
 	.heading-wrap .h3 {
@@ -877,9 +960,9 @@
 		width: 650px;
 	}
 
-	/*.content-block {*/
-	/*	padding: 100px 0 100px 0;*/
-	/*}*/
+	.content-block {
+		width: 70%;
+	}
 
 	.partners .partners-item {
 		width: 45%;
