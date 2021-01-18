@@ -6,6 +6,28 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "Gotham-Bold";
+	src: url("../fonts/Gotham-Bold.otf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham-Book";
+	src: url("../fonts/Gotham-Book.otf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham-Light";
+	src: url("../fonts/Gotham-Light.otf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+
 [class^="icon-"],
 [class*=" icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */
@@ -84,21 +106,87 @@
 	opacity: .9;
 }
 
+.banner-outback {
+	background-image: url("../images/outback.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	min-height: 350px;
+}
+
+.icon-colour {
+	color: #71b6d5
+}
+
+.icon-row {
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.header {
+	display: inline-flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.banner-text {
+	text-align: center;
+	margin: auto;
+	color: white;
+	justify-content: center;
+}
+
+.banner-text h1 {
+	font-size: 1.562rem;
+	margin-bottom: 1.5rem;
+	font-family: Gotham-Light;
+}
+
+.banner-text h3 {
+	font-size: 0.9rem;
+	font-family: Gotham-Bold;
+}
+
+.contact-text {
+	margin-bottom: 20px;
+}
+
 .btn {
 	-webkit-transition: background .3s linear;
+	font-family: Gotham-Bold;
 	transition: background .3s linear;
 	display: block;
-	width: 197px;
+	width: 120px;
 	text-transform: uppercase;
 	color: #fff;
 	text-decoration: none;
-	background: #000;
 	margin: 0 auto;
+	font-size: 0.7rem;
 }
 
-.btn:hover {
-	background: #3a3838;
+.btn-sub {
+	font-family: Gotham-Light;
+}
+
+.btn:hover, :focus, :checked {
+	background: rgba(0, 0, 0, 0.3);
 	color: #fff;
+}
+
+.active {
+	background: rgba(0, 0, 0, 0.3);
+	color: #fff;
+}
+
+.dropdown-menu {
+	top: 100%;
+	width: 120px;
+	min-width: unset;
+	color: #b6afad;
+	background:rgba(0, 0, 0, 0.3);
 }
 
 .primary-header {
@@ -174,6 +262,50 @@
 
 .content-block {
 	padding: 35px 0 35px 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.our-team-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.our-team-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.our-team-image-column {
+	text-align: center;
+}
+
+.our-team-image-column img {
+	width: 30%;
+	padding-bottom: 15px;
+}
+
+.our-team-text-column {
+	padding: 0 0 10px 0
+}
+
+.our-team-text-column h1 {
+	font-size: 1.3rem;
+	font-family: Gotham-Bold;
+	text-align: center;
+}
+
+.our-team-text-column h3 {
+	font-size: 1rem;
+	font-family: Gotham-Bold;
+	text-align: center;
+}
+
+.our-team-text-column p {
+	font-size: 1rem;
+	font-family: Gotham-Book;
+	text-align: center;
 }
 
 .heading-wrap {
@@ -334,7 +466,7 @@
 }
 
 .contact {
-	background: #000;
+	background: #273a43;
 	padding: 30px 0;
 	color: #fff;
 }
@@ -499,12 +631,60 @@
 	position: absolute;
 }
 
-.footer {
-	background: #000;
-	text-align: center;
+.footer-icon-container {
+	align-self: flex-end;
+}
+
+.footer-icon {
+	height: 24px;
+	width: 24px;
+}
+
+.footer-background {
+	background: #172227;
+	text-align: left;
 	font-size: .687rem;
 	padding: 20px 0;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+.footer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
 	color: #fff;
+	align-self: flex-start;
+	flex-direction: row;
+}
+
+.icon-row p {
+	font-family: Gotham-Book;
+	font-size: 1rem;
+	padding: 5px;
+}
+
+.navbar {
+    margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	align-self: flex-start;
+	border-bottom: 2px solid #b6afad;
+	flex-direction: column;
+}
+
+.bottom-logo {
+    text-align: center;
+}
+
+.navbar-brand {
+	align-self: center;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar-nav {
+	flex-direction: row;
 }
 
 @media (min-width: 768px) {
@@ -525,6 +705,19 @@
 		min-height: 700px;
 	}
 
+	.banner-outback {
+		min-height: 456px;
+	}
+
+	.btn {
+		width: 125px;
+		font-size: 0.75rem;
+	}
+
+	.dropdown-menu {
+		width: 125px;
+	}
+
 	.hero .hero-content {
 		padding: 75px 0;
 	}
@@ -537,12 +730,54 @@
 		font-size: 2.187rem;
 	}
 
+	.banner-text h1 {
+		font-size: 2.187rem;
+	}
+
+	.banner-text h3 {
+		font-size: 1.2rem;
+	}
+
 	.hero-wrap-text span {
 		font-size: 2rem;
 	}
 
 	.content-block {
 		padding: 50px 0 50px 0;
+		width: 90%;
+	}
+
+	.our-team-content {
+		flex-direction: row;
+	}
+
+	.our-team-image-column img {
+		width: unset;
+		padding-bottom: unset;
+	}
+
+	.our-team-image-column {
+		width: 15%;
+	}
+
+	.our-team-text-column {
+		width: 85%;
+		padding: 0 0 10px 40px
+	}
+
+	.our-team-text-column h1 {
+		text-align: left;
+		font-size: 1.2rem;
+	}
+
+	.our-team-text-column h3 {
+		text-align: left;
+		font-size: 1.1rem;
+	}
+
+	.our-team-text-column p {
+		text-align: left;
+		font-size: 1.1rem;
 	}
 
 	.investment .investment-wrap .investment-item {
@@ -592,6 +827,21 @@
 		bottom: 50px;
 	}
 
+	.btn {
+		width: 125px;
+		font-size: 0.8rem;
+	}
+
+	.navbar {
+		flex-direction: row;
+	}
+
+	.navbar-brand {
+		align-self: flex-start;
+		margin-left: unset;
+		margin-right: unset;
+	}
+
 	.hero {
 		height: 100vh;
 	}
@@ -609,6 +859,15 @@
 		font-size: 2.812rem;
 	}
 
+	.banner-text h1 {
+		margin-bottom: 2.5rem;
+		font-size: 2.812rem;
+	}
+
+	.banner-text h3 {
+		font-size: 1.5rem;
+	}
+
 	.hero-wrap-text span {
 		font-size: 3rem;
 	}
@@ -619,6 +878,19 @@
 
 	.content-block {
 		padding: 90px 0 90px 0;
+		width: 80%;
+	}
+
+	.our-team-text-column h1 {
+		font-size: 1.3rem;
+	}
+
+	.our-team-text-column h3 {
+		font-size: 1.1rem;
+	}
+
+	.our-team-text-column p {
+		font-size: 1.1rem;
 	}
 
 	.heading-wrap .h3 {
@@ -689,7 +961,7 @@
 	}
 
 	.content-block {
-		padding: 135px 0 100px 0;
+		width: 70%;
 	}
 
 	.partners .partners-item {
@@ -700,4 +972,4 @@
 		padding: 100px 0 120px 0;
 	}
 }
-
+
