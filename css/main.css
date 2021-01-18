@@ -116,6 +116,16 @@
     min-height: 350px;
 }
 
+.banner-contact {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/address.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+}
+
 .icon-colour {
     color: #71b6d5
 }
