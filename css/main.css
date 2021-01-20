@@ -116,7 +116,7 @@
     min-height: 350px;
 }
 
-.icon-colour {
+.material-icons {
     color: #71b6d5
 }
 
@@ -151,7 +151,10 @@
 }
 
 .contact-text {
+    font-family: Gotham-Bold;
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 .btn {
@@ -159,12 +162,12 @@
     font-family: Gotham-Bold;
     transition: background .3s linear;
     display: block;
-    width: 120px;
+    width: 75px;
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
     margin: 0 auto;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
 }
 
 .btn-sub {
@@ -183,10 +186,15 @@
 
 .dropdown-menu {
     top: 100%;
-    width: 120px;
+    width: 75px;
     min-width: unset;
     color: #b6afad;
     background: rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-item {
+    text-align: center;
+    padding: unset;
 }
 
 .primary-header {
@@ -227,37 +235,6 @@
 
 .logo a img {
     width: 100%;
-}
-
-.hero-wrap-text {
-    text-align: center;
-    max-width: 875px;
-    color: #fff;
-    margin: 0 auto;
-}
-
-.hero-wrap-text h3 {
-    letter-spacing: .23em;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-.hero-wrap-text h1 {
-    margin-bottom: 1.5rem;
-    font-size: 1.562rem;
-}
-
-.hero-wrap-text span {
-    font-size: 1.25rem;
-    font-family: "Times New Roman", Times, serif;
-    line-height: 1.1em;
-    letter-spacing: .002em;
-}
-
-.hero-wrap-text .wrap-text {
-    max-width: 570px;
-    margin: 0 auto;
 }
 
 .content-block {
@@ -369,83 +346,8 @@
     text-align: center;
 }
 
-.investment {
-    background: #f7f7f7;
-}
-
-.investment h3 {
-    margin-bottom: 2.8rem;
-}
-
-.investment .text-center-wrap {
-    margin-bottom: 30px;
-}
-
-.investment .investment-wrap {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-}
-
-.investment .investment-wrap .investment-item {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.investment .investment-wrap .investment-item .title {
-    display: block;
-}
-
-.investment .investment-wrap .investment-item .img-investment {
-    height: 100px;
-    margin-bottom: 15px;
-}
-
-.investment .investment-wrap .investment-item .img-investment img {
-    height: 100%;
-}
-
-.investment .wrap-item-text {
-    max-width: 270px;
-    margin: 0 auto;
-    font-weight: 700;
-    font-size: 1rem;
-}
-
 .team .heading-wrap {
     margin-bottom: 30px;
-}
-
-.team .team-item {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.team .team-item:last-child {
-    margin-bottom: 0;
-}
-
-.team .team-item .profile-img {
-    margin-bottom: 22px;
-}
-
-.team .team-item .profile-img img {
-    width: 100%;
-}
-
-.team .team-item .name {
-    display: block;
-    font-size: 1.475rem;
-    margin-bottom: 5px;
-}
-
-.team .team-item .post {
-    display: block;
-    font-size: .875rem;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 .contact-us-link {
@@ -664,6 +566,26 @@
     position: absolute;
 }
 
+.footer-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-contacts {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: #273a43;
+    padding: 30px 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .footer-icon-container {
     align-self: flex-end;
 }
@@ -691,6 +613,11 @@
     flex-direction: row;
 }
 
+.footer-logo {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 .icon-row p {
     font-family: Gotham-Book;
     font-size: 1rem;
@@ -700,24 +627,27 @@
 .navbar {
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
     align-self: flex-start;
     border-bottom: 2px solid #b6afad;
     flex-direction: column;
-}
-
-.bottom-logo {
-    text-align: center;
 }
 
 .navbar-brand {
     align-self: center;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navbar-nav {
     flex-direction: row;
+}
+
+.navbar-logo {
+    width: 80%;
+    max-width: 332px;
 }
 
 @media (min-width: 768px) {
@@ -734,8 +664,30 @@
         font-size: 1.4em;
     }
 
-    .hero {
-        min-height: 700px;
+    .navbar {
+        width: 80%;
+    }
+
+    .navbar-logo {
+        width: unset;
+    }
+
+    .footer-information {
+        width: 80%;
+        flex-direction: row;
+    }
+
+    .footer-contact-icon {
+        margin-left: 3rem;
+    }
+
+    .footer-contacts {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .contact-text {
+        margin-left: 3rem;
     }
 
     .banner-outback {
@@ -751,16 +703,8 @@
         width: 125px;
     }
 
-    .hero .hero-content {
-        padding: 75px 0;
-    }
-
     .logo a {
         width: 450px;
-    }
-
-    .hero-wrap-text h1 {
-        font-size: 2.187rem;
     }
 
     .banner-text h1 {
@@ -773,10 +717,6 @@
 
     .quote {
         padding: 40px 40px 40px 50px;
-    }
-
-    .hero-wrap-text span {
-        font-size: 2rem;
     }
 
     .content-block {
@@ -825,29 +765,12 @@
         font-size: 1.1rem;
     }
 
-    .investment .investment-wrap .investment-item {
-        width: 33.3%;
-    }
-
-    .team .heading-wrap {
-        margin-bottom: 40px;
-    }
-
-    .team .team-item {
-        width: 33%;
-        margin-bottom: 30px;
-    }
-
     .contact-us-link {
         padding: 40px 0 90px 0;
     }
 
     .contact-us-link h2 {
         font-size: 2.8rem;
-    }
-
-    .partners .partners-item {
-        width: 47%;
     }
 
     .contact {
