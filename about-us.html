@@ -19,26 +19,26 @@
 <body>
 <header class="banner-outback header">
     <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand mr-auto" href="#"><img src="images/logo2.png" alt="Sword+Stone"></a>
+        <a class="navbar-brand mr-auto" href="/"><img class="navbar-logo" src="images/logo2.png" alt="Sword+Stone"></a>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link btn m-1" href="#">Home</a>
+                <a class="nav-link btn m-1" href="/">Home</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link btn m-1" href="#" data-toggle="dropdown">
+                <a class="nav-link btn m-1" href="/about-page" data-toggle="dropdown">
                     About Us
                 </a>
                 <div class="dropdown-menu m-1">
-                    <a class="dropdown-item btn btn-sub" href="about-us">About Us</a>
+                    <a class="dropdown-item btn btn-sub" href="/about-page">About Us</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item btn btn-sub" href="our-team">Our Team</a>
+                    <a class="dropdown-item btn btn-sub" href="/our-team">Our Team</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link btn m-1" href="offerings">Our Offerings</a>
+                <a class="nav-link btn m-1" href="/offering-page">Our Offerings</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link btn m-1" href="contact">Contact</a>
+                <a class="nav-link btn m-1" href="mailto:info@swordandstone.com.au">Contact</a>
             </li>
         </ul>
     </nav>
@@ -96,39 +96,33 @@
 </main>
 <footer>
     <section class="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 bottom-logo">
-                    <a class="bottom-logo" href="#"><img src="images/logo2.png" alt="Sword+Stone"></a>
+        <div class="footer-information">
+            <a class="footer-logo" href="/"><img class="navbar-logo" src="images/logo2.png" alt="Sword+Stone"></a>
+            <div class="footer-contacts">
+                <h4 class="contact-text">CONTACT</h4>
+                <div class="icon-row">
+                    <i class="material-icons footer-contact-icon">room</i>
+                    <p class="ml-2">Brisbane, Australia</p>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="container">
-                        <h4 class="ml-5 contact-text">CONTACT</h4>
-                        <div class="icon-row">
-                            <i class="material-icons ml-5" style="color: #71b6d5">room</i>
-                            <p class="ml-2">Brisbane, Australia</p>
-                        </div>
-                        <div class="icon-row">
-                            <i class="material-icons ml-5" style="color: #71b6d5">mail</i>
-                            <p class="ml-2">info@swordandstone.com.au</p>
-                        </div>
-                        <div class="icon-row">
-                            <i class="material-icons ml-5" style="color: #71b6d5">phone</i>
-                            <p class="ml-2">+61 XXXX XXXX</p>
-                        </div>
-                    </div>
+                <div class="icon-row">
+                    <i class="material-icons footer-contact-icon">mail</i>
+                    <p class="ml-2">info@swordandstone.com.au</p>
+                </div>
+                <div class="icon-row">
+                    <i class="material-icons footer-contact-icon">phone</i>
+                    <p class="ml-2">+61 XXXX XXXX</p>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer-background">
+    <section class="footer-background">
         <div class="footer navbar-expand-lg navbar">
             <span class="mr-auto">&copy; 2021 All rights reserved.</span>
             <a class="footer-icon-container" href="https://twitter.com/swordandstone1">
                 <img class="footer-icon" src="icons/iconfinder_Circled_Twitter_svg_5279123_blue.png">
             </a>
         </div>
-    </footer>
+    </section>
 </footer>
 </body>
 </html>
