@@ -34,6 +34,16 @@
     min-height: 350px;
 }
 
+.banner-contact {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/address.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+}
+
 .material-icons {
     color: #71b6d5
 }
@@ -345,6 +355,82 @@
     position: absolute;
 }
 
+.contact-page-info {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-page-box {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.contact-page-box i {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+
+.contact-page-box h2 {
+    font-size: 1.2rem;
+    font-family: Gotham-Bold;
+}
+
+.contact-page-box p {
+    font-size: 0.8rem;
+    font-family: Gotham-Book;
+    color: #7c7770;
+}
+
+.contact-form {
+    font-family: Gotham-Book;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+}
+
+.contact-form-sub {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form-main {
+    width: 100%;
+}
+
+.contact-area {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: .75em 1rem;
+    margin-bottom: 1rem;
+    border: unset;
+}
+
+.contact-form-btn {
+    border-radius: 10px;
+    padding: .75em 1rem;
+    margin-bottom: 1rem;
+    border: unset;
+    background-color: #71b6d5;
+    color: white;
+}
+
+.contact-area:focus, .contact-area:focus {
+    background-color: #b2b2b2;
+    outline: unset;
+}
+
 .footer-information {
     display: flex;
     flex-direction: column;
@@ -465,9 +551,21 @@
         align-items: flex-start;
     }
 
+    .contact-page-box {
+        width: 50%;
+    }
+
     .contact-text {
         margin-left: 3rem;
     }
+
+    .contact-form {
+        width: 70%;
+    }
+    .contact-form-sub {
+        width: 49%;
+    }
+
 
     .banner-outback {
         min-height: 456px;
@@ -572,6 +670,14 @@
         align-self: flex-start;
         margin-left: unset;
         margin-right: unset;
+    }
+
+    .contact-page-box {
+        width: 25%;
+    }
+
+    .contact-form {
+        width: 60%;
     }
 
     .banner-text h1 {
