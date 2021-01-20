@@ -1,12 +1,4 @@
 @font-face {
-    font-family: "icomoon";
-    src: url("../fonts/icomoon.eot?w9h4gb");
-    src: url("../fonts/icomoon.eot?w9h4gb#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?w9h4gb") format("truetype"), url("../fonts/icomoon.woff?w9h4gb") format("woff"), url("../fonts/icomoon.svg?w9h4gb#icomoon") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: "Gotham-Bold";
     src: url("../fonts/Gotham-Bold.otf");
     font-weight: bold;
@@ -28,82 +20,8 @@
 }
 
 
-[class^="icon-"],
-[class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "icomoon" !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1; /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-up-arrow:before {
-    content: "\e900";
-}
-
-.icon-back-arrow:before {
-    content: "\e901";
-}
-
-.icon-favorite-heart-button:before {
-    content: "\e902";
-}
-
-.icon-refreshing:before {
-    content: "\e903";
-}
-
-.icon-twitter:before {
-    content: "\e904";
-}
-
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.ellipsis {
-    white-space: nowrap; /* 1 */
-    text-overflow: ellipsis; /* 2 */
-    overflow: hidden;
-}
-
 #wrapper {
     position: relative;
-}
-
-.anchor {
-    -webkit-transition: opacity .3s linear;
-    transition: opacity .3s linear;
-    width: 30px;
-    height: 30px;
-    background: #fff;
-    opacity: .6;
-    position: absolute;
-    bottom: 30px;
-    right: 10px;
-    z-index: 100;
-}
-
-.anchor span {
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    font-size: .875rem;
-    color: #000;
-}
-
-.anchor:hover {
-    opacity: .9;
 }
 
 .banner-outback {
@@ -116,7 +34,7 @@
     min-height: 350px;
 }
 
-.icon-colour {
+.material-icons {
     color: #71b6d5
 }
 
@@ -151,7 +69,10 @@
 }
 
 .contact-text {
+    font-family: Gotham-Bold;
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 .btn {
@@ -159,12 +80,12 @@
     font-family: Gotham-Bold;
     transition: background .3s linear;
     display: block;
-    width: 120px;
+    width: 75px;
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
     margin: 0 auto;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
 }
 
 .btn-sub {
@@ -183,81 +104,15 @@
 
 .dropdown-menu {
     top: 100%;
-    width: 120px;
+    width: 75px;
     min-width: unset;
     color: #b6afad;
     background: rgba(0, 0, 0, 0.3);
 }
 
-.primary-header {
-    position: relative;
-    margin-bottom: 3.4rem;
-}
-
-.primary-header:after {
-    content: "";
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    bottom: -1.7rem;
-    left: 50%;
-    position: absolute;
-    width: 95px;
-    height: 1px;
-    background: #495057;
-}
-
-.hero {
-    background-position: center;
-    background-size: cover;
-    min-height: 400px;
-}
-
-.hero .hero-content {
-    padding: 40px 0;
-}
-
-.logo {
-    margin-bottom: 30px;
-}
-
-.logo a {
-    width: 250px;
-}
-
-.logo a img {
-    width: 100%;
-}
-
-.hero-wrap-text {
+.dropdown-item {
     text-align: center;
-    max-width: 875px;
-    color: #fff;
-    margin: 0 auto;
-}
-
-.hero-wrap-text h3 {
-    letter-spacing: .23em;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-.hero-wrap-text h1 {
-    margin-bottom: 1.5rem;
-    font-size: 1.562rem;
-}
-
-.hero-wrap-text span {
-    font-size: 1.25rem;
-    font-family: "Times New Roman", Times, serif;
-    line-height: 1.1em;
-    letter-spacing: .002em;
-}
-
-.hero-wrap-text .wrap-text {
-    max-width: 570px;
-    margin: 0 auto;
+    padding: unset;
 }
 
 .content-block {
@@ -341,195 +196,10 @@
     text-align: center;
 }
 
-.heading-wrap {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.heading-wrap .h3 {
-    margin-bottom: 4.4rem;
-    position: relative;
-}
-
-.heading-wrap .h3:after {
-    content: "";
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    bottom: -2.1rem;
-    left: 50%;
-    position: absolute;
-    width: 95px;
-    height: 1px;
-    background: #495057;
-}
-
-.text-center-wrap {
-    text-align: center;
-}
-
-.investment {
-    background: #f7f7f7;
-}
-
-.investment h3 {
-    margin-bottom: 2.8rem;
-}
-
-.investment .text-center-wrap {
-    margin-bottom: 30px;
-}
-
-.investment .investment-wrap {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-}
-
-.investment .investment-wrap .investment-item {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.investment .investment-wrap .investment-item .title {
-    display: block;
-}
-
-.investment .investment-wrap .investment-item .img-investment {
-    height: 100px;
-    margin-bottom: 15px;
-}
-
-.investment .investment-wrap .investment-item .img-investment img {
-    height: 100%;
-}
-
-.investment .wrap-item-text {
-    max-width: 270px;
-    margin: 0 auto;
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-.team .heading-wrap {
-    margin-bottom: 30px;
-}
-
-.team .team-item {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.team .team-item:last-child {
-    margin-bottom: 0;
-}
-
-.team .team-item .profile-img {
-    margin-bottom: 22px;
-}
-
-.team .team-item .profile-img img {
-    width: 100%;
-}
-
-.team .team-item .name {
-    display: block;
-    font-size: 1.475rem;
-    margin-bottom: 5px;
-}
-
-.team .team-item .post {
-    display: block;
-    font-size: .875rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.contact-us-link {
-    background-position: top;
-    background-size: cover;
-    text-align: center;
-    padding: 20px 0 71px 0;
-}
-
-.contact-us-link h5 {
-    text-transform: uppercase;
-    letter-spacing: -.05em;
-}
-
-.contact-us-link h2 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.25rem;
-    font-weight: 400;
-    margin-bottom: 23px;
-}
-
-.partners {
-    padding: 30px 0;
-}
-
-.partners .heading-wrap {
-    margin-bottom: 30px;
-}
-
-.partners .partners-item {
-    margin-bottom: 20px;
-}
-
-.partners .partners-item a {
-    -webkit-transition: opacity .3s linear;
-    transition: opacity .3s linear;
-}
-
-.partners .partners-item a:hover {
-    opacity: .7;
-}
-
-.partners .partners-item a img {
-    width: 100%;
-}
-
-.container-md {
-    max-width: 1500px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
 .contact {
     background: #273a43;
     padding: 30px 0;
     color: #fff;
-}
-
-.contact .contact-link {
-    margin-bottom: 30px;
-}
-
-.contact .message {
-    margin-bottom: 30px;
-}
-
-.contact .recent h6 {
-    margin-bottom: 35px;
-}
-
-.contact h6 {
-    margin-bottom: 20px;
-}
-
-.contact form input,
-.contact form textarea {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.contact form textarea {
-    resize: none;
-    height: 237px;
 }
 
 .form-control {
@@ -664,6 +334,26 @@
     position: absolute;
 }
 
+.footer-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-contacts {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: #273a43;
+    padding: 30px 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .footer-icon-container {
     align-self: flex-end;
 }
@@ -691,6 +381,11 @@
     flex-direction: row;
 }
 
+.footer-logo {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 .icon-row p {
     font-family: Gotham-Book;
     font-size: 1rem;
@@ -700,24 +395,27 @@
 .navbar {
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
     align-self: flex-start;
     border-bottom: 2px solid #b6afad;
     flex-direction: column;
-}
-
-.bottom-logo {
-    text-align: center;
 }
 
 .navbar-brand {
     align-self: center;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navbar-nav {
     flex-direction: row;
+}
+
+.navbar-logo {
+    width: 80%;
+    max-width: 332px;
 }
 
 @media (min-width: 768px) {
@@ -734,8 +432,30 @@
         font-size: 1.4em;
     }
 
-    .hero {
-        min-height: 700px;
+    .navbar {
+        width: 80%;
+    }
+
+    .navbar-logo {
+        width: unset;
+    }
+
+    .footer-information {
+        width: 80%;
+        flex-direction: row;
+    }
+
+    .footer-contact-icon {
+        margin-left: 3rem;
+    }
+
+    .footer-contacts {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .contact-text {
+        margin-left: 3rem;
     }
 
     .banner-outback {
@@ -751,18 +471,6 @@
         width: 125px;
     }
 
-    .hero .hero-content {
-        padding: 75px 0;
-    }
-
-    .logo a {
-        width: 450px;
-    }
-
-    .hero-wrap-text h1 {
-        font-size: 2.187rem;
-    }
-
     .banner-text h1 {
         font-size: 2.187rem;
     }
@@ -773,10 +481,6 @@
 
     .quote {
         padding: 40px 40px 40px 50px;
-    }
-
-    .hero-wrap-text span {
-        font-size: 2rem;
     }
 
     .content-block {
@@ -825,31 +529,6 @@
         font-size: 1.1rem;
     }
 
-    .investment .investment-wrap .investment-item {
-        width: 33.3%;
-    }
-
-    .team .heading-wrap {
-        margin-bottom: 40px;
-    }
-
-    .team .team-item {
-        width: 33%;
-        margin-bottom: 30px;
-    }
-
-    .contact-us-link {
-        padding: 40px 0 90px 0;
-    }
-
-    .contact-us-link h2 {
-        font-size: 2.8rem;
-    }
-
-    .partners .partners-item {
-        width: 47%;
-    }
-
     .contact {
         padding: 40px 0;
     }
@@ -865,13 +544,6 @@
         font-size: 2.812rem;
     }
 
-    .anchor {
-        right: 36px;
-        width: 40px;
-        height: 40px;
-        bottom: 50px;
-    }
-
     .btn {
         width: 125px;
         font-size: 0.8rem;
@@ -885,23 +557,6 @@
         align-self: flex-start;
         margin-left: unset;
         margin-right: unset;
-    }
-
-    .hero {
-        height: 100vh;
-    }
-
-    .logo {
-        margin-bottom: 50px;
-    }
-
-    .hero-wrap-text h3 {
-        margin-bottom: 1.75rem;
-    }
-
-    .hero-wrap-text h1 {
-        margin-bottom: 2.5rem;
-        font-size: 2.812rem;
     }
 
     .banner-text h1 {
@@ -921,14 +576,6 @@
         font-size: 0.9rem;
     }
 
-    .hero-wrap-text span {
-        font-size: 3rem;
-    }
-
-    .hero-wrap-text .wrap-text {
-        max-width: 770px;
-    }
-
     .content-block {
         padding: 90px 0 90px 0;
         width: 80%;
@@ -946,44 +593,8 @@
         font-size: 1.1rem;
     }
 
-    .heading-wrap .h3 {
-        margin-bottom: 8.4rem;
-    }
-
-    .heading-wrap .h3:after {
-        bottom: -4.2rem;
-    }
-
-    .investment .text-center-wrap {
-        margin-bottom: 45px;
-    }
-
-    .investment .investment-wrap .investment-item {
-        margin-bottom: 50px;
-    }
-
-    .investment .investment-wrap .investment-item .img-investment {
-        height: 130px;
-    }
-
-    .investment .wrap-item-text {
-        font-size: 1.25rem;
-    }
-
-    .team .heading-wrap {
-        margin-bottom: 85px;
-    }
-
     .contact-us-link {
         padding: 140px 0 180px 0;
-    }
-
-    .partners {
-        padding: 85px 0;
-    }
-
-    .partners .heading-wrap {
-        margin-bottom: 70px;
     }
 
     .contact {
@@ -1009,16 +620,9 @@
 }
 
 @media (min-width: 1200px) {
-    .logo a {
-        width: 650px;
-    }
 
     .content-block {
         width: 70%;
-    }
-
-    .partners .partners-item {
-        width: 45%;
     }
 
     .contact {
