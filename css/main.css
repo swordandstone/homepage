@@ -24,8 +24,7 @@
     position: relative;
 }
 
-.banner-outback {
-    background-image: url("../images/outback.png");
+.banner {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,14 +33,20 @@
     min-height: 350px;
 }
 
+.banner-outback {
+    background-image: url("../images/outback.png");
+}
+
 .banner-contact {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/address.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    min-height: 350px;
+}
+
+.banner-home {
+    background-image: url("../images/Home-banner.jpg");
+}
+
+.banner-offerings {
+    background-image: url("../images/Offering-banner.jpg");
 }
 
 .material-icons {
@@ -566,11 +571,14 @@
         width: 49%;
     }
 
-
     .banner-outback {
         min-height: 456px;
     }
 
+    .banner-offerings {
+        min-height: 456px;
+    }
+    
     .btn {
         width: 125px;
         font-size: 0.75rem;
@@ -749,6 +757,7 @@
     .content-block {
         width: 70%;
     }
+
 
     .contact {
         padding: 100px 0 120px 0;
