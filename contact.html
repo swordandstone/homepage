@@ -16,7 +16,7 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
         function onSubmit(token) {
-          document.getElementById("demo-form").submit();
+          document.getElementById("contact-form").submit();
         }
       </script> 
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet">
@@ -108,7 +108,7 @@
             CONTACT FORM
         </h2>
     </div>
-    <form action="https://formspree.io/f/mwkwadkq" class="contact-form" method="POST">
+    <form id="contact-form" action="https://formspree.io/f/mwkwadkq" class="contact-form" method="POST">
     	<input class="contact-form-sub mr-auto contact-area" type="text" name="name" placeholder="Name" required>
         <input class="contact-form-sub contact-area" type="email" name="_replyto" placeholder="Email" required>
         <textarea rows="5" class="contact-form-main contact-area" type="text" name="message" id="message" placeholder="Message" required></textarea>
